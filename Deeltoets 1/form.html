@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Front End Development</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Deeltoets 1" />
+    <meta name="author" content="Sikander Malik" />
+    <meta name="keywords" content="Front End Development, Deeltoets, Sikander Malik" />
+</head>
+<body>
+	<div id="wrapper">
+		<header><h1 id="top">FED Deeltoets 1</h1></header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="form.html">Formulier</a></li>
+			</ul>
+		</nav>
+		<article>
+			<section>
+				<h2>Aanmelden</h2>
+				<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+				Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+				lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+
+				<aside>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+				Amsterdam.</aside>
+
+				<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+				Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+				Voor vragen of opmerkingen kunt u <a href="contact.html">contact</a> met ons op.</p>
+			
+			</section>
+
+			<section>	
+	<form>
+			<fieldset>
+				<legend>Contactgegevens:</legend>
+
+				<label for="name">Naam</label>
+				<input type="text" id="name" placeholder="Naam" required><br/>
+
+				<label for="bedrijf">Bedrijf</label>
+				<input type="text" id="bedrijf" placeholder="bedrijf" required><br/>
+
+				<label for="adres">Adres</label>
+				<input type="text" id="adres" placeholder="Adres" required pattern="/^([1-9][e][\s])*([a-zA-Z]+(([\.][\s])|([\s]))?)+[1-9][0-9]*(([-][1-9][0-9]*)|([\s]?[a-zA-Z]+))?$/i" title="dutch address"><br/>
+
+				<label for="postcode">Postcode</label>
+				<input type="text" id="postcode" placeholder="Postcode" required pattern="/^[1-9][0-9]{3}[\s]?[A-Za-z]{2}$/i" title="dutch postal code"><br/>
+
+				<label for="plaats">Plaats</label>
+				<input type="text" id="plaats" placeholder="Plaats" required><br/>
+
+				<label for="telefoon">Telefoon</label>
+				<input type="text" id="telefoon" placeholder="Telefoon" required pattern="(\+?\d[- .]*){7,13}" title="international, national or local phone number"><br/>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" placeholder="Email" required><br/>
+
+			</fieldset>
+
+			<fieldset>
+
+				<legend>Ik wil mijn aanmelden:</legend>
+
+				<input type="radio" name="aanmelden" value="project" id="project"><label for="project">Voor een project</label><br/>
+				<input type="radio" name="aanmelden" value="stage" id="stage"><label for="stage">Als stagebedrijf</label>
+
+			</fieldset>
+		</form>
+
+			</section>	
+
+
+		</article>
+		<footer>Website door Sikander Malik</footer>
+	</div>	
+</body>
+</html>
